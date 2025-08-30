@@ -1,0 +1,76 @@
+Cara – Offline Personal Assistant
+
+Cara is a full-featured, offline-capable Python personal assistant with voice interaction, face recognition, alarms, music playback, and more. Designed to run on Python 3.10 with Windows (pywin32 / SAPI5 for TTS).
+
+Features
+1. Wake Word Detection
+
+Uses Vosk for offline speech recognition.
+
+Wake word: "Cara" (configurable).
+
+Detects when you speak the wake word to trigger commands.
+
+2. Text-to-Speech (TTS)
+
+Offline voice synthesis using pyttsx3 with Windows SAPI5.
+
+Announces:
+
+Faces entering the room.
+
+Alarm reminders.
+
+Calendar events or other notifications.
+
+3. Face Recognition
+
+Uses face_recognition and OpenCV.
+
+Live webcam feed with boxes and names around recognized faces.
+
+Announces people when they appear in the camera view.
+
+Supports adding known faces in the known_faces/ folder.
+
+4. Music Playback
+
+Auto-detects your Music folder.
+
+Plays .mp3 files with a single click or command.
+
+5. Alarms
+
+Set alarms with custom messages.
+
+Announced through TTS.
+
+Works fully offline.
+
+6. Calendar
+
+Local JSON-based calendar.
+
+Add and retrieve events for today or any date.
+
+Can announce events via TTS.
+
+7. GUI
+
+Tkinter-based GUI.
+
+Live webcam feed.
+
+Displays recognition status and feedback.
+
+8. Calculations & Web Search
+
+Supports basic math calculations offline.
+
+Opens Google search in a browser for online queries if needed.
+
+9. Offline-first Design
+
+Works entirely offline for TTS, face recognition, alarms, calendar, and music.
+
+Can fall back to online resources for additional info like weather or searches.
